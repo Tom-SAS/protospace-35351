@@ -35,10 +35,9 @@
 
 | Column     | Type       | Options     |
 | ---------- | ---------- | ----------- |
-| title      | string     |             |
-| catch_copy | references | null: false |
-| image      |            |             |
-| user       | references |             |
+| title      | string     | null: false |
+| catch_copy | text       | null: false |
+| user       | references | null: false |
 
 ### Association
 
