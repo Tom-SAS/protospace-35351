@@ -6,6 +6,7 @@
         <%= "こんにちは、" %>
         <%= link_to "#{current_user.name}さん", root_path, class: :greeting__link%>
       </div>
+      <%= render partial: 'prototype', collection: @prototypes %>
       <% else %>
   <% end %>
     <%# // ログインしているときは上記を表示する %>

@@ -37,9 +37,10 @@
 | ---------- | ---------- | ----------- |
 | title      | string     | null: false |
 | catch_copy | text       | null: false |
+| concept    | text       | null: false |
 | user       | references | null: false |
 
 ### Association
 
-- belongs_to :users
+- belongs_to :user
 - has_many   :comments
