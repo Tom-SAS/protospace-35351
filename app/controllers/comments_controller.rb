@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
       else
         @prototype = @comment.prototype
         @comments = @prototype.comments
-        render "prototypes/show" # views/tweets/show.html.erbのファイルを参照しています。
+        render "/prototypes/#{comment.prototype.id}" # views/tweets/show.html.erbのファイルを参照しています。
       end
   end
   
